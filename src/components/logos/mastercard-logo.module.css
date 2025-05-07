@@ -1,0 +1,12 @@
+.mastercard-logo {
+  width: 20%;
+  height: auto;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .mastercard-logo {
+    width: 2.5rem;
+    height: auto;
+  }
+}

@@ -1,0 +1,78 @@
+main {
+  border: none;
+}
+
+.main__p {
+  text-align: center;
+  margin: 1rem;
+  font-weight: 700;
+}
+
+/* Create border effect
+under inactive monthly tab button */
+.main__half-width-border-top {
+  display: block;
+  width: 50%;
+  height: 1px;
+  background-color: gray;
+  margin-left: 49.6%;
+}
+
+.nav-paragraph {
+  background-color: #eaedf4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.nav__button {
+  background-color: #eaedf4;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+@media (max-width: 384px) {
+  /* Suitable wrap to retain 
+  accessible font-size*/
+  .main__p {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1920px) {
+  /* Extend border-top below 
+  inactive tab to remaining width */
+  .main__half-width-border-top {
+    width: 85%;  
+    height: 1px;
+    background-color: gray;
+    margin-left: 15%;
+  }
+
+  .main__p {
+    text-align: start;
+    margin-left: 1rem;
+     font-size: 1.1rem;
+  }
+
+  .main__footer {
+    grid-column: 1 / 3;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #eaedf4;
+    margin-top: 4rem;
+  }
+
+  .nav__button {
+    margin-left: 2rem;
+  }
+  }
+
+

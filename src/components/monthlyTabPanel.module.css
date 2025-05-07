@@ -1,0 +1,211 @@
+main {
+  width: 100%;
+  max-width: 100%;
+}
+
+.main__h1 {
+  text-align: center;
+  margin: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+/* Border-top effect for tab panel */
+.main__span-monthly-tab-panel {
+  display: block;
+  width: 50.4%;
+  height: 0.5px;
+  background-color: black;
+  margin-left: 49.6%;
+}
+
+.main__monthly-text {
+  background-color: #eaedf4;
+  text-align: center;
+  padding: 0 1rem;
+  color: #64666d;
+  font-weight: 600;
+}
+
+.nav__paragraph {
+  background-color: #eaedf4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.nav__button {
+  background-color: #eaedf4;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+/* Div for aria-live 
+messages, no visual display */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Narrowest mobiles */
+@media screen and (max-width: 330px) {
+  .nav__button {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* Narrower mobiles, 14px
+font-size meets WCAG2 */
+@media screen and (max-width: 359px) {
+  .main__h1 {
+    margin-top: 1rem;
+    padding: 0 1.5rem;
+    font-size: 0.9rem;
+    white-space: normal;
+    font-weight: 600;
+  }
+
+  .main__footer {
+    margin-top: 5rem;
+  }
+
+  .nav__button {
+    border-bottom: none;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 375px) {
+  .main__h1 {
+    font-size: 0.93rem;
+    margin: 2rem 0.2rem 1rem 0.2rem;
+  }
+
+  /* 14px min accessible font-size */
+  .main__monthly-text {
+    font-size: 0.875rem;
+  }
+
+  .nav__button {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (min-width: 330px) and (max-width: 535px) {
+  .main__monthly-text {
+    padding: 0 3rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 535px) and (max-width: 1024px) {
+  .main__h1 {
+    font-size: 1.5rem;
+  }
+
+  .main__footer {
+    margin-top: 0;
+  }
+}
+
+/* Desktop Non-Retina Screen */
+@media screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  main {
+    overflow-x: hidden;
+  }
+  /* Tab panel border-top effect  */
+  .main__span-monthly-tab-panel {
+    display: block;
+    width: 80%;
+    margin-left: 20%;
+    height: 0.5px;
+  }
+
+  .main__h1 {
+    text-align: start;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+  }
+
+  /* Footer layout */
+  .main__footer {
+    grid-column: 1 / 3;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: #eaedf4;
+    margin-top: 4rem;
+    height: 6rem;
+  }
+
+  .nav__button {
+    margin-left: 2rem;
+    margin-right: 3rem;
+    white-space: nowrap;
+  }
+
+  .main__monthly-text {
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+}
+
+/* Desktop Retina Screen */
+@media screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  main {
+    overflow-x: hidden;
+  }
+  /* Tab panel border-top effect  */
+  .main__span-monthly-tab-panel {
+    width: 80%;
+    margin-left: 20%;
+  }
+
+  .main__h1 {
+    text-align: left;
+    font-size: 1rem;
+    /* padding-left: 1rem;*/
+  }
+
+  .main__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaedf4;
+    margin-top: 4rem;
+    height: 6rem;
+  }
+
+  .nav__button {
+    margin-left: 2rem;
+    margin-right: 3rem;
+    white-space: nowrap;
+  }
+
+  .main__monthly-text {
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+}

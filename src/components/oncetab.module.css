@@ -1,0 +1,78 @@
+.main__p {
+  text-align: center;
+  margin: 1rem;
+  font-weight: 700;
+}
+
+/* Create border effect
+under inactive monthly tab button */
+.main__half-width-border-top {
+  display: block;
+  width: 50.4%;
+  height: 1px;
+  background-color: gray;
+}
+
+.nav__paragraph {
+  background-color: #eaedf4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.nav__button {
+  background-color: #eaedf4;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+@media (max-width: 384px) {
+  /* Text wrap at suitable word 
+  retain min 1rem font-size*/
+  .main__p {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1920px) {
+  /* Extend border-top below inactive tab to remaining width */
+  .main__half-width-border-top {
+    width: 70%;
+    height: 1px;
+    background-color: gray;
+    margin-left: 30.25%;
+  }
+
+  /* Create border effect under inactive tab button */
+  .main__once-tab-border-top {
+    display: block;
+    width: 15.4%;
+    margin-right: 85%;
+    height: 1px;
+    background-color: gray;
+  }
+
+  .main__p {
+    text-align: start;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+  }
+
+  /* Desktop */
+  .once__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #eaedf4;
+    height: 6rem;
+  }
+
+  .nav__paragraph {
+    margin-left: 2rem;
+  }
+}

@@ -1,0 +1,53 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaedf4;
+  max-width: 100%;
+  overflow-y: hidden;
+}
+
+.logos__container-logos,
+.logos__container-logos-monthly {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  max-width: 20rem;
+  padding: 0 1rem 0 0.75rem;
+}
+
+/* Prevent overflow for mobile 
+until < 320px screen width */
+.logos__container-logos--once-tab {
+  max-width: 15%;
+}
+
+.logos__container-logos img,
+.logos__container-logos-monthly img {
+  object-fit: contain;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .logos__container-logos-monthly,
+  .logos__container-logos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+    padding-right: 2rem;
+    margin: 0;
+    width: 30rem;
+    max-width: 30rem;
+    overflow-x: clip;
+    overflow-y: hidden;
+  }
+}

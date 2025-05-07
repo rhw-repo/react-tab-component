@@ -1,0 +1,12 @@
+.paypal-logo {
+  width: 30%;
+  height: auto;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .paypal-logo {
+    width: 5rem;
+    height: auto;
+  }
+}

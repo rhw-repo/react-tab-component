@@ -1,0 +1,11 @@
+.fundraisingRegulatorLogo {
+  width: 30%;
+  height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .fundraisingRegulatorLogo {
+    width: 6rem;
+    height: auto;
+  }
+}

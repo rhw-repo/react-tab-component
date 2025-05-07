@@ -1,0 +1,12 @@
+.directDebitLogo {
+  width: 30%;
+  height: auto;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .directDebitLogo {
+    width: 5rem;
+    height: auto;
+  }
+}

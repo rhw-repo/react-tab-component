@@ -1,0 +1,196 @@
+main {
+  width: 100%;
+  max-width: 100%;
+}
+
+.main__h1 {
+  text-align: center;
+  margin: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+/* Tab panel border-top effect */
+.main__span-2 {
+  display: block;
+  width: 51%;
+  height: 0.5px;
+  background-color: black;
+}
+
+.nav__paragraph {
+  background-color: #eaedf4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.nav__button {
+  background-color: #eaedf4;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+/* Div for aria-live 
+messages, no visual display */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Narrowest mobiles, 14px
+font-size meets WCAG2 */
+@media (max-width: 359px) {
+  .main__h1 {
+    margin-top: 1rem;
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    white-space: normal;
+    font-weight: 600;
+  }
+
+  .form .tooltip {
+    font-size: 0.9rem;
+    padding: 0;
+    font-weight: 600;
+  }
+
+  .once__footer {
+    margin-top: 5rem;
+  }
+
+  .nav__button {
+    border-bottom: none;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 374px) {
+  .main__h1 {
+    padding: 2rem;
+  }
+}
+
+/* Mobiles */
+@media screen and (min-width: 375px) and (max-width: 730px) {
+  .main__span-2 {
+    width: 50.5%;
+    background-color: black;
+    height: 0.5px;
+  }
+}
+
+/* Tablets - border effect handled by main__span-1, 
+avoid conflicting media queries */
+@media screen and (min-width: 731px) and (max-width: 1023px) {
+  .main__span-2 {
+    display: none;
+  }
+
+  .main__span-1 {
+    display: block;
+    width: 50.3%;
+    background-color: black;
+    height: 0.5px;
+  }
+}
+
+/* Desktop Non-Retina Screens */
+@media screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  main {
+    overflow-x: hidden;
+  }
+
+  /* Border effect under inactive tab button */
+  .main__span-1 {
+    display: block;
+    width: 20.5%;
+    height: 0.5px;
+    background-color: black;
+  }
+
+  /* Border effect for remaining width */
+  .main__span-2 {
+    display: block;
+    width: 59.5%;
+    height: 1pt;
+    margin-left: 40.5%;
+  }
+
+  .main__h1 {
+    text-align: start;
+    font-size: 1.1rem;
+    margin-left: 2rem;
+  }
+
+  /* Footer layout */
+  .once__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #eaedf4;
+    height: 6rem;
+  }
+
+  .nav__button {
+    margin-left: 2rem;
+    margin-right: 7rem;
+    white-space: nowrap;
+  }
+}
+
+/* Desktop Retina Screens */
+@media screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  main {
+    overflow-x: hidden;
+  }
+
+  /* Border effect under inactive tab button */
+  .main__span-1 {
+    display: block;
+    width: 20.5%;
+    height: 0.5px;
+    background-color: black;
+  }
+
+  /* Border effect for remaining width */
+  .main__span-2 {
+    display: block;
+    width: 59.5%;
+    height: 1pt;
+    margin-left: 40.5%;
+  }
+
+  .main__h1 {
+    text-align: start;
+    font-size: 1.1rem;
+    margin-left: 2rem;
+  }
+
+  /* Footer layout */
+  .once__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #eaedf4;
+    height: 6rem;
+  }
+
+  .nav__button {
+    margin-left: 2rem;
+    margin-right: 7rem;
+    white-space: nowrap;
+  }
+}

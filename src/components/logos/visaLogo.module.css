@@ -1,0 +1,12 @@
+.visa-logo {
+  width: 20%;
+  height: auto;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .visa-logo {
+    width: 4rem;
+    height: auto;
+  }
+}
